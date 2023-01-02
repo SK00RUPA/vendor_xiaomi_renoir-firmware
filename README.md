@@ -1,14 +1,19 @@
-# android_vendor_xiaomi_renoir-firmware
+# vendor_xiaomi_renoir-firmware
 
 Firmware images for Mi 11 Lite 5G (renoir), to include in custom ROM builds.
 
-**Current version**: fw_RENOIRGlobal_V13.0.4.0.SKIMIXM_e66cdbaec5_12.0
+
+**Current version**: fw_RENOIRGlobal_V13.0.9.0.SKIMIXM_b0613244de_12.0
 
 ### How to use?
 
-1. Clone this repo to `vendor/xiaomi/renoir-firmware`
+1. Install Git LFS by `git lfs install --skip-repo`
+ 
+2. Clone this repo to `vendor/xiaomi/renoir-firmware` using `git lfs clone` command
 
-2. Include it from `BoardConfig.mk` in device or common tree:
+3. Check if cloned images have a proper size - `modem.img` should be around 200MB
+
+4. Include it from `BoardConfig.mk` in the device tree:
 
 ```
 # Firmware
